@@ -4,8 +4,6 @@ from logic import get_joke, send_joke
 
 request = get_joke()
 
-print(type(request))
-
 # Joke
 joke = {
     "token": APP_TOKEN,
