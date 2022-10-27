@@ -1,16 +1,9 @@
-# config files
-from config import USER_KEY, APP_TOKEN
-from logic import get_joke, send_joke
+from objects import Joke
 
-request = get_joke()
-
-# Joke
-joke = {
-    "token": APP_TOKEN,
-    "user": USER_KEY,
-    "message": request['joke']
-}
-
-send_joke(joke, request)
-
+# Creates joke class
+joke = Joke
+# Request the Joke
+r = joke.get_joke()
+# Send the Joke
+joke.send_joke(joke.params, r)
 
