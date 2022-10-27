@@ -24,4 +24,4 @@ class Joke:
     "token": APP_TOKEN,
     "user": USER_KEY,
     "message": get_joke()['joke']
-}
+    }
