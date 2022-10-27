@@ -16,7 +16,6 @@ class Joke:
         try:
             r = requests.post("https://api.pushover.net/1/messages.json", data=joke)
             print("Joke Sent")
-            print(r.text)
         except Exception as e:
             print(f"Something went wrong!, {e}: {request['status']}")
 
